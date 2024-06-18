@@ -1,0 +1,109 @@
+/*About me*/
+
+.about{
+    position: relative;
+    text-align: center;
+    display: flex;
+}
+.about h1{
+    font-size: 3em;
+    display: block;
+    font-weight: 500;
+    margin: auto;
+}
+.animated-line {
+    position: relative;
+    top: 50%;
+    left: 10px;
+    width: 5px;
+    height: 0;
+    background: linear-gradient(180deg, #c49ef7, #9ebdf7, #9ef7c0, #e59ef7);
+    opacity: 0;
+    transition: height 0.5s ease, opacity 0.5s ease;
+}
+.content{
+    display: block;
+    width: 60%;
+    margin: auto;
+    text-align: left;
+    transform: translateX(-50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showsocial .5s 1.5s linear 1 forwards;
+}
+.star{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #b074ff;
+    z-index: -1;
+    box-shadow: 0 0 10px 3px #be8dff;
+    animation: twinkle .7s;
+    animation-iteration-count: infinite;
+}
+@keyframes twinkle{
+    0%, 100% {width: 10px; height: 10px;}
+    50%{width: 2px; height: 2px;}
+}
+#s1{
+    top: 20%;
+    left: 20%;
+}
+#s2{
+    top: 30%;
+    left: 80%;
+    animation-delay: .2s;
+}
+#s3{
+    top: 100%;
+    left: 30%;
+    animation-delay: .5s;
+}
+#s4{
+    top: 60%;
+    left: 50%;
+    animation-delay: .9s;
+}
+#s5{
+    top: 110%;
+    left: 60%;
+    animation-delay: .7s;
+}
+#s6{
+    top: 85%;
+    left: 69%;
+    animation-delay: 1s;
+}
+#s7{
+    top: 50%;
+    left: 7%;
+    animation-delay: .3s;
+}
+#s8{
+    top: 70%;
+    left: 90%;
+    animation-delay: 1.2s;
+}
+#s9{
+    left: 40%;
+    animation-delay: 1.5s;
+}
+.about h1:hover{
+    font-size: 3.5em;
+    transition: .2s ease-in-out;
+}
+@media (max-width: 800px) {
+    .content{width: 40%;}
+}
+@media (max-width: 630px) {
+    .about{
+        flex-direction: column;
+    }
+    .content{
+        width: 70%;
+        text-align: center;
+    }
+    .animated-line{display: none;}
+}

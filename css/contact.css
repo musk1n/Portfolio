@@ -1,0 +1,84 @@
+/*Contact*/
+
+@keyframes slideUp {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+  }
+.contact {
+    padding: 20px 10px;
+    background: linear-gradient(135deg, #130428, #130428,#130428, #251043,#251043, #38126D, #190634);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin: auto;
+    margin-bottom: 0px;
+    width: 80%;
+    text-align: center;
+    color: #b484f3;
+    animation: slideUp 0.7s ease-in-out;
+}
+.contact:hover{
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    background: linear-gradient(-45deg, #130428, #130428,#130428, #251043,#251043, #38126D, #190634);
+}
+.contact h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+}
+
+.contact label {
+    margin-left: -5px;
+    color: white; 
+    align-self: flex-start; 
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 20px;
+    border: 2px solid #b484f3; 
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: rgba(0, 0, 0, 0.3);
+    color: #b484f3;
+}
+
+.contact input::placeholder, .contact textarea::placeholder {
+    color: #b484f3; 
+}
+
+.contact button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #130428; 
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 0 20px 5px #c49ef7;
+}
+
+.contact button:hover {
+    background: #c49ef7;
+    color: #130428;
+    font-weight: bold;
+    box-shadow: none;
+    transform: scale(1.05);
+}
+.formMessage {
+    margin-top: 20px;
+    color: white;
+    font-size: 1.2em;
+}

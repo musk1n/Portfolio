@@ -1,0 +1,150 @@
+/*Projects*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.projects{
+    position: relative;
+    text-align: center;
+    margin-top: 60px;
+}
+.projects h1{
+    font-size: 3em;
+    display: block;
+    font-weight: 500;
+    margin-bottom: -20px;
+}
+.projects h1:hover{
+    font-size: 3.5em;
+    transition: .2s ease-in-out;
+}
+#background{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #7447af;
+    filter: blur(150px);
+    z-index: -1;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px; 
+}
+.card-row {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+    max-width: 1200px; 
+    margin-bottom: 20px;
+}
+.cards .card{
+    padding: 20px;
+    margin: 30px;
+    width: 30%;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #0a0314;
+    transition: transform 0.3s ease, filter 0.3s ease; 
+    box-shadow: 0 0 20px 5px #c49ef7;
+}
+
+.cards .card  img{
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+    transition: transform 0.3s ease, filter 0.3s ease; 
+}
+.cards .card img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+.cards .card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+}
+.ctg{
+    font-weight: bold;
+    font-size: 1.5em;
+    background: linear-gradient(0deg, #c49ef7, #ffffff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    z-index: 2;
+}
+.ts img{
+    width: 80%;
+    margin: 10%;
+}
+.ts img {
+    transition: transform 0.3s ease;
+}
+.ts img:hover {
+    transform: scale(1.1);
+}
+
+.des{
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+.btn a{
+    color: #c49ef7;
+    text-decoration: none;
+    font-size: 3em;
+}
+.btn{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+@media (max-width: 1100px) {
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+
+    .card-row {
+        flex-direction: column; 
+    }
+
+    .cards .card {
+        width: 80%;
+        margin: 5% 10%;
+    }
+    .projects{
+        margin-top: 50%;
+    }
+    .projects h1{
+        margin-bottom: -5%;
+    }
+}
+@media (max-width: 720px) {
+    .projects{
+        margin-top: 70%;
+    }
+    .projects h1{
+        margin-bottom: -5%;
+    }
+}
+
+@media (max-width: 550px) {
+    .cards .card {
+        width: 75%;
+        margin: 20px auto;
+    }
+    .ts img{
+        width: 100%;
+        margin: 0%;
+    }
+    .projects{
+        margin-top: 90%;
+    }
+}
