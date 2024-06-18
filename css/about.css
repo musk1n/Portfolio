@@ -1,5 +1,6 @@
-/*About me*/
-
+.projects{
+    margin-top: 0px;
+}
 .about{
     position: relative;
     text-align: center;
@@ -100,6 +101,10 @@
 @media (max-width: 630px) {
     .about{
         flex-direction: column;
+        margin-top: 80%;
+    }
+    .projects{
+        margin-top: 0px;
     }
     .content{
         width: 70%;
