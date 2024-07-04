@@ -39,6 +39,19 @@ body{
     background-color: #7447af;
     filter: blur(150px);
     z-index: -1;
+    transition: 1s ease-in-out;
+    animation: bgd 3s infinite alternate;
+}
+@keyframes bgd{
+    0%, 100%{
+        background-color: #7447af;
+        transform: translate(-50%, -50%);
+    }
+    50%{
+        transform: translate(-60%, -60%);
+        width: 200px;
+        height: 700px;
+    }
 }
 .landing{
     width: 100vw;
@@ -123,7 +136,7 @@ body{
     transform: scale(0);
 }
 
-.img{
+.mimg{
     width: 450px;
     height: 450px;
     margin: auto;
@@ -140,7 +153,7 @@ body{
     }
 }
 
-.img .circle{
+.mimg .circle{
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -165,7 +178,7 @@ body{
     85% {background: linear-gradient(20deg, #251C31, #c49ef7);}
     90% {background: linear-gradient(60deg, #251C31, #c49ef7);}
 }
-.img .circle::after{
+.mimg .circle::after{
     content: '';
     position: absolute;
     width: 430px;
@@ -173,7 +186,7 @@ body{
     background-color: #11071F;
     border-radius: 50%;
 }
-.img .circle img{
+.mimg .circle img{
     margin-top: 20%;
     z-index: 5;
     position: relative;
@@ -196,18 +209,18 @@ html {
         justify-content: center;
     }
     .header ul a{
-        font-size: 0.8em;
+        font-size: 0.5em;
         padding: 2px 7px;
     }
-    .img{
+    .mimg{
         width: 350px;
         height: 350px;
     }
-    .img .circle::after{
+    .mimg .circle::after{
         width: 320px;
         height: 320px;
     }
-    .img .circle img{
+    .mimg .circle img{
         width: 300px;
     }
 }

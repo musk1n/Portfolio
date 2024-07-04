@@ -52,3 +52,57 @@ document.addEventListener('DOMContentLoaded', function () {
     // Listen to scroll events
     window.addEventListener('scroll', animateLine);
 });
+
+
+//experiences
+document.addEventListener('DOMContentLoaded', () => {
+    const exp1 = document.querySelector('.exp1');
+    const exp2 = document.querySelector('.exp2');
+    const experienceSection = document.getElementById('experience');
+    const positions = document.querySelectorAll('.position');
+    let currentIndex = 0;
+    let isSplitted = false;
+
+    window.addEventListener('scroll', function() {
+        const rect = experienceSection.getBoundingClientRect();
+        const screenHeight = window.innerHeight;
+
+        if (rect.top < screenHeight && rect.bottom >= 0 && !isSplitted) {
+            exp1.style.transform = 'translateX(-80px) scale(0.5)';
+            exp2.style.transform = 'translateX(80px) scale(0.5)';
+            displayPosition(currentIndex);
+            isSplitted = true;
+        }
+    });
+
+    exp1.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            hidePosition(currentIndex);
+            currentIndex--;
+            displayPosition(currentIndex);
+        }
+    });
+
+    exp2.addEventListener('click', () => {
+        if (currentIndex < positions.length - 1) {
+            hidePosition(currentIndex);
+            currentIndex++;
+            displayPosition(currentIndex);
+        }
+    });
+
+    function displayPosition(index) {
+        positions[index].style.display = 'flex';
+        setTimeout(() => {
+            positions[index].style.opacity = 1;
+            positions[index].style.transform = 'translateY(0)';
+        }, 10); 
+    }
+
+    function hidePosition(index) {
+        positions[index].style.opacity = 0;
+        setTimeout(() => {
+            positions[index].style.display = 'none';
+        }, 500);
+    }
+});

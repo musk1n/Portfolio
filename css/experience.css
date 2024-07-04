@@ -1,0 +1,98 @@
+.experience {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.exp1, .exp2 {
+    color: #c090ff;
+    font-size: 12vw;
+    font-weight: bold;
+    text-shadow: 1px 1px hsl(268, 50%, 45%),
+                2px 2px hsl(268, 50%, 40%),
+                3px 3px hsl(268, 50%, 35%),
+                4px 4px hsl(268, 50%, 34%),
+                5px 5px hsl(268, 50%, 33%),
+                6px 6px hsl(268, 50%, 32%),
+                7px 7px hsl(268, 50%, 31%),
+                8px 8px hsl(268, 50%, 30%),
+                9px 9px hsl(268, 50%, 29%),
+                10px 10px hsl(268, 50%, 28%),
+                10px 10px 30px rgba(0,0,0,.7);
+    transition: all 0.5s ease-in-out;
+}
+.exp1:hover, .exp2:hover{
+    color: #9d59f7;
+    text-shadow: 1px 1px hsl(268, 88%, 78%),
+                2px 2px hsl(268, 96%, 81%),
+                3px 3px hsl(268, 91%, 78%),
+                4px 4px hsl(268, 90%, 80%),
+                5px 5px hsl(268, 100%, 80%),
+                6px 6px hsl(268, 94%, 81%),
+                7px 7px hsl(267, 88%, 83%),
+                8px 8px hsl(268, 93%, 83%),
+                9px 9px hsl(268, 93%, 82%),
+                10px 10px hsl(269, 85%, 82%),
+                10px 10px 30px rgba(0,0,0,.7);
+}
+
+.positions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    overflow-y: auto;
+}
+
+.experiences .positions .position {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    margin-bottom: 35%;
+}
+
+.position .img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+    transition: .15s ease-in-out;
+}
+.img:hover{
+    width: 55px;
+    height: auto;
+}
+.text:hover{
+    color: #ccabf7;
+}
+
+.text {
+    text-align: center;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.position .text p {
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .experiences .positions .position {
+        margin-bottom: 45%;
+    }
+}
+
+@media (max-width: 545px) {
+    .experiences{
+        margin-top: 25%;
+        overflow-x: hidden;
+    }
+    .experiences .positions .position {
+        margin-bottom: 55%;
+    }
+}
