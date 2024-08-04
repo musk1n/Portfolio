@@ -1,6 +1,6 @@
 ## Portfolio Website
 
-This is my personal portfolio showcasing my projects, technical skills, and contact information.
+This is my [personal portfolio](https://musk1n.github.io/Portfolio/) showcasing my projects, technical skills, and contact information.
 
 ## Features
 
