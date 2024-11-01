@@ -11,20 +11,6 @@ This is my [personal portfolio](https://musk1n.github.io/Portfolio/) showcasing 
 - **Contact Me**: A functional form with fields for name, email, and message.
 - **Responsive**: The website is responsive as well.
 
-## Setup and Installation
-
-To run this project locally, follow these steps:
-
-1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/musk1n/Portfolio.git
-    ```
-2. **Navigate to the project directory**:
-    ```bash
-    cd Portfolio
-    ```
-3. **Open `index.html` in your web browser**.
-
 ## Screenshots
 
 ![Screenshot 1](https://github.com/musk1n/Portfolio/assets/151397097/dcab0f46-978e-4634-bda8-7b2a9ddfe34d)
