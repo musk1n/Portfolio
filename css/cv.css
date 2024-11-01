@@ -1,0 +1,45 @@
+.cv-section {
+    background-color: #11071F; /* Dark background */
+    color: white; /* White text color */
+    padding: 20px; /* Add some padding */
+    text-align: center; /* Center the heading */
+}
+
+.cv-section h1{
+    font-size: 3.5em;
+    font-weight: 500;
+}
+.cv-container {
+    width: 90vw; /* 90% of viewport width */
+    height: 60vh; /* 50% of viewport height */
+    margin: 0 auto; /* Center the container */
+    /*border: 2px solid #7447af;  Border in the specified color */
+    border-radius: 10px; /* Optional: rounded corners */
+    overflow: hidden; /* Hide overflow */
+    position: relative; /* Position relative for absolute positioning of iframe */
+}
+
+.cv-container button {
+    background-color: #7447af; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for buttons */
+    padding: 10px 15px; /* Button padding */
+    margin: 10px; /* Space around buttons */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+.cv-container button:hover {
+    background-color: #11071F; /* Darken button on hover */
+}
+
+.cv-container iframe {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    border: none; /* Remove default border */
+    position: absolute; /* Position absolute to fill the container */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    transform-origin: top left; /* Set the zoom point */
+    transition: transform 0.2s ease; /* Smooth zoom transition */
+}
