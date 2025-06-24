@@ -17,8 +17,8 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         return;
     }
 
-    formMessage.textContent = 'Thank you for your message!';
-    formMessage.style.color = 'green';
+    formMessage.textContent = 'Service not available currently!!';
+    formMessage.style.color = 'white';
 
     document.getElementById('contactForm').reset();
 });
